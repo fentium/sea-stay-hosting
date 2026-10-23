@@ -110,7 +110,7 @@ export function Services() {
               {s.cost && <p className="mt-5 border-t border-primary-foreground/15 pt-4 text-sm text-sand">{s.cost}</p>}
             </li>
           ))}
-          <li className="hidden flex-col justify-end bg-primary p-10 lg:flex">
+          <li className="hidden flex-col justify-end bg-primary p-10 lg:col-span-2 lg:flex">
             <p className="text-sm leading-relaxed text-primary-foreground/70">
               We do not promise guaranteed occupancy, revenue or returns. The scope of each service is agreed with every owner.
             </p>

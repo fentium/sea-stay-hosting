@@ -32,7 +32,7 @@ export function useSiteMotion() {
         px.forEach((el) => {
           const r = el.parentElement!.getBoundingClientRect();
           if (r.bottom < 0 || r.top > vh) return;
-          const speed = Number(el.dataset.parallax) || 0.12;
+          const speed = Number(el.dataset["parallax"]) || 0.12;
           const offset = (r.top + r.height / 2 - vh / 2) * -speed;
           el.style.transform = `translate3d(0, ${offset.toFixed(1)}px, 0) scale(1.12)`;
         });

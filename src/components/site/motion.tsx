@@ -50,9 +50,9 @@ export function useSiteMotion() {
   }, []);
 }
 
-export function Wave({ className = "" }: { className?: string }) {
+export function Wave(props: React.SVGProps<SVGSVGElement> & { "data-reveal"?: boolean | string }) {
   return (
-    <svg viewBox="0 0 120 12" className={className} aria-hidden="true" fill="none">
+    <svg viewBox="0 0 120 12" {...props} aria-hidden="true" fill="none">
       <path d="M0 6 C 15 0, 25 12, 40 6 S 65 0, 80 6 S 105 12, 120 6" stroke="currentColor" strokeWidth="1.2" />
     </svg>
   );

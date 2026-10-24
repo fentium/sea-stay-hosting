@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import logoAsset from "@/assets/sea-stay-logo.png.asset.json";
 
 /** Observes [data-reveal] elements and applies parallax to [data-parallax]. */
 export function useSiteMotion() {
@@ -60,12 +61,10 @@ export function Wave(props: React.SVGProps<SVGSVGElement> & { "data-reveal"?: bo
 
 export function Wordmark({ light = false }: { light?: boolean }) {
   return (
-    <span className={`flex flex-col leading-none ${light ? "text-primary-foreground" : "text-primary"}`}>
-      <span className="font-display text-2xl tracking-tight">Sea &amp; Stay</span>
-      <span className="mt-1 flex items-center gap-2">
-        <Wave className={`h-2 w-6 ${light ? "text-sand" : "text-accent"}`} />
-        <span className="eyebrow text-[0.55rem]">Hosting</span>
-      </span>
-    </span>
+    <img
+      src={logoAsset.url}
+      alt="Sea & Stay Hosting"
+      className={`h-11 w-auto ${light ? "brightness-0 invert" : ""}`}
+    />
   );
 }

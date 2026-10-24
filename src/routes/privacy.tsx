@@ -16,7 +16,7 @@ export const Route = createFileRoute("/privacy")({
 function Privacy() {
   return (
     <main className="mx-auto max-w-3xl px-5 py-16 md:py-24">
-      <Link to="/" aria-label="Back to home"><Wordmark /></Link>
+      <Link to="/" aria-label="Back to home"><Wordmark className="h-[97px]" /></Link>
       <h1 className="mt-14 text-5xl">Privacy Policy</h1>
       <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted-foreground">
         <p>When you contact Sea &amp; Stay Hosting by email, telephone or through our enquiry form, we use the details you provide only to respond to your enquiry and discuss the management of your property.</p>

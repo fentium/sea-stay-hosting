@@ -113,7 +113,7 @@ export function Footer() {
     <footer className="border-t bg-background pb-24 pt-16 md:pb-12">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 md:grid-cols-4 md:px-10">
         <div className="md:col-span-2">
-          <Wordmark />
+          <Wordmark className="h-22" />
           <p className="mt-5 max-w-sm text-muted-foreground">Professional holiday let management for property owners in Hastings and across East Sussex.</p>
         </div>
         <nav aria-label="Footer">

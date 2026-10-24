@@ -29,7 +29,7 @@ export function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 md:px-10">
         <a href="#home" aria-label="Sea & Stay Hosting, back to top">
-          <Wordmark light={light} />
+          <Wordmark light={light} className="h-[77px]" />
         </a>
         <nav aria-label="Main" className="hidden lg:block">
           <ul className="flex items-center gap-8">

@@ -59,12 +59,12 @@ export function Wave(props: React.SVGProps<SVGSVGElement> & { "data-reveal"?: bo
   );
 }
 
-export function Wordmark({ light = false }: { light?: boolean }) {
+export function Wordmark({ light = false, className = "h-11" }: { light?: boolean; className?: string }) {
   return (
     <img
       src={logoAsset.url}
       alt="Sea & Stay Hosting"
-      className={`h-11 w-auto ${light ? "brightness-0 invert" : ""}`}
+      className={`${className} w-auto ${light ? "brightness-0 invert" : ""}`}
     />
   );
 }
